@@ -11,5 +11,5 @@ public interface Challenge<I> {
 	Class<? extends I> getInputFormat();
 	List<I> getInputs();
 	boolean oracle(I input);
-	CauseEffectChain computeTrace(I... x);
+	String getJavaProgram();
 }
